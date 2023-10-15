@@ -39,11 +39,27 @@ h1 {
 	left : 45%;
 }
 
+.topright {
+	position : relative;
+	left : 10%;
+}
+
+.topleft {
+	position : relative;
+	left : 40%;
+}
+
 .center {
 	position: relative;
 	
 	top: 40%;
 	left: 40%;
+}
+
+.graterPos {
+	position : relative;
+	top : 5%;
+	left : 45%;
 }
 
 .blank {
@@ -126,5 +142,44 @@ h1 {
 	animation-delay : 10s;
     -webkit-animation: floatBubble 4s normal ease-out, fadeOut 4s;
 	-webkit-animation-delay : 10s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes xAxis {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateX(100px);
+  }
+}
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(-100px);
+  }
+}
+
+.shootsAnim {
+	animation: xAxis 2.5s infinite ease-in, fadeOut 6s;
+	animation-delay : 15s;
+	webkit-animation: xAxis 2.5s infinite ease-in, fadeOut 6s;
+	-webkit-animation-delay : 15s;
+	animation-fill-mode: forwards;
+	z-index : 2;
+}
+.shootsAnim::after{
+	animation: yAxis 2.5s infinite ease-out, fadeOut 10s;
+	animation-delay : 15s;
+	webkit-animation: yAxis 2.5s infinite ease-out, fadeOut 10s;
+	-webkit-animation-delay : 15s;
+	animation-fill-mode: forwards;
+	z-index : 2;
+}
+
+.graterAnim {
+	animation: fadeOut 10s;
+	animation-delay : 15s;
+    -webkit-animation: fadeOut 10s;
+	-webkit-animation-delay : 15s;
 	animation-fill-mode: forwards;
 }
