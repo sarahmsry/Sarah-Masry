@@ -1,0 +1,208 @@
+body {
+	overflow-x : hidden;
+	background-color: rgb(260, 240, 230);
+}
+
+p {
+	margin-left : 10px;
+	margin-top : 10px;
+}
+
+h1 {
+	font-size : 30pt;
+	font-weight : bold;
+	text-align : center;
+}
+
+h2 {
+	font-size : 20pt;
+	font-weight : bold;
+	margin-top : 1px;
+	margin-bottom : 5px;
+}
+
+.textBlock {
+	width : 40%;
+	margin-right : 5%;
+	margin-left : 5%;
+	margin-bottom : 10px;
+	border : 5px solid rgb(100, 70, 0);
+	background-color: rgb(220, 180, 80);
+	float : left;
+}
+
+.animationBlock {
+	position : relative;
+	width : 40%;
+	margin-right : 5%;
+	height : 500px;
+	bottom : 40%;
+}
+
+.clear{
+	overflow : auto;
+}
+
+.container{
+	position : relative;
+	overflow : hidden;
+}
+
+.topcenter {
+	position : relative;
+	left : 45%;
+}
+
+.topright {
+	position : relative;
+	left : 27%;
+}
+
+.topleft {
+	position : relative;
+	left : 40%;
+}
+
+.center {
+	position: relative;
+	
+	top: 40%;
+	left: 40%;
+}
+
+.ramenPos {
+	position: relative;
+	
+	top: 28%;
+	left: 30%;
+}
+
+.graterPos {
+	position : relative;
+	top : 5%;
+	left : 45%;
+}
+
+.blank {
+	opacity: 0;
+}
+
+.borderElem {
+	border : 1px solid black;
+}
+
+.floatDown {
+    animation-fill-mode: forwards;
+	animation: floatBubble 4s normal ease-out;
+    -webkit-animation: floatBubble 4s normal ease-out;
+}
+.eggAnim{
+	position : absolute;
+	z-index : 2;
+	animation: floatBubble 4s normal ease-out, fadeOut 4s;
+    -webkit-animation: floatBubble 4s normal ease-out, fadeOut 4s;
+	animation-fill-mode: forwards;
+}
+@keyframes floatBubble {
+    0% {top:0px;}
+    100% {top:200px;}
+}
+@-webkit-keyframes floatBubble {
+    0% {top:0px;}
+    100% {top:200px;}
+}
+
+.fadeOutImg {
+	animation : fadeOut 4s;
+	-webkit-animation: fadeOut 4s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+.panAnim {
+	position : absolute;
+	z-index : 2;
+	animation : fadeOut 6s;
+	animation-delay : 4s;
+	-webkit-animation: fadeOut 6s;
+	-webkit-animation-delay : 4s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes fadeOut{
+	0% {opacity: 1;}
+	100% {opacity:0;}
+}
+@-webkit-keyframes fadeOut{
+	0% {opacity: 1;}
+	100% {opacity:0;}
+}
+
+.boilingAnim {
+	position : absolute;
+	z-index : 1;
+	animation : fadeIn 8s;
+	animation-delay : 4s;
+	-webkit-animation: fadeIn 8s;
+	-webkit-animation-delay : 4s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity:1;}
+}
+
+.ramenAnim {
+	position : absolute;
+	z-index : 2;
+	animation: floatBubble 4s normal ease-out, fadeOut 4s;
+	animation-delay : 10s;
+    -webkit-animation: floatBubble 4s normal ease-out, fadeOut 4s;
+	-webkit-animation-delay : 10s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes xAxis {
+  50% {
+    animation-timing-function: ease-in;
+    transform: translateX(100px);
+  }
+}
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: ease-out;
+    transform: translateY(-100px);
+  }
+}
+
+.shootsAnim {
+	animation: xAxis 2.5s infinite ease-in, fadeOut 6s;
+	animation-delay : 15s;
+	webkit-animation: xAxis 2.5s infinite ease-in, fadeOut 6s;
+	-webkit-animation-delay : 15s;
+	animation-fill-mode: forwards;
+	z-index : 2;
+}
+
+.graterAnim {
+	animation: fadeOut 10s;
+	animation-delay : 15s;
+    -webkit-animation: fadeOut 10s;
+	-webkit-animation-delay : 15s;
+	animation-fill-mode: forwards;
+}
+
+.ramenbowlAnim {
+	position : absolute;
+	z-index : 10;
+	animation : fadeIn 10s;
+	animation-delay : 25s;
+	-webkit-animation: fadeIn 10s;
+	-webkit-animation-delay : 25s;
+	animation-fill-mode: forwards;
+}
