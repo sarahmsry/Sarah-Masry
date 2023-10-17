@@ -1,0 +1,155 @@
+body {
+	font-family: Arial, sans-serif;
+	background-image: url("bg.jpeg");
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #8A3A29;
+	color: white;
+	text-align: center;
+	padding: 20px;
+} 
+
+h1 {
+	margin: 0;
+}
+
+.ingredients {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.instructions {
+	max-width: 90%;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+
+.ingredients ul {
+    list-style-type: none
+}
+
+.ingredients li {
+	padding: 10px 0;
+}
+
+.ingredients img {
+	width: 70px; 
+	margin-left: 10px; 
+	vertical-align: middle; 
+	animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+}
+
+.animationBlock {
+	max-width: 90%;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.animationBlock img {
+	width: 70px; 
+	margin-left: 50px; 
+	vertical-align: middle; 
+	display: inline-block;
+}
+
+#final-pizza{
+	width: 1000px;
+}
+
+#final-pizza img{
+	width: 100px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animationBlock img {
+    animation: slideInFromLeft 3s ease-in-out forwards;
+    opacity: 0;
+}
+
+.animationBlock img:last-child {
+    animation: spin 1s linear 12s forwards;
+	animation-delay: 15s;
+	opacity: 1;
+}
+
+.animationBlock img:nth-child(1) {
+    animation-delay: 0s;
+    opacity: 1; 
+}
+
+.animationBlock img:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.animationBlock img:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.animationBlock img:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.animationBlock img:nth-child(5) {
+    animation-delay: 12s;
+}
+
+
+h2 {
+	color: #333;
+}
+
+p {
+	line-height: 1.5;
+}
