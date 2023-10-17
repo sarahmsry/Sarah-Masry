@@ -1,0 +1,156 @@
+body{
+  background-color: #d6ad8d;
+}
+
+h1{
+  text-align: center;
+  font-family: Stencil Std, fantasy;
+  font-size: 50px;
+  color: #2e1605;
+}
+
+h2{
+  text-align: center;
+  font-family: Stencil Std, fantasy;
+  font-size: 30px;
+  color: #2e1605;
+}
+
+.ingredients{
+  float: left;
+  font-family: Stencil Std, fantasy;
+  color: #2e1605;
+}
+
+
+
+.animation{
+  float: right;
+  margin: 5px;
+}
+
+.bowl {
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  bottom: 170;
+  left: 500;
+  right: calc(50% - 40px);
+  background-color: #FFF;
+  border-radius: 0 0 100px 100px / 0 0 100px 100px;
+  float: right;
+  margin: 5px;
+}
+
+
+
+
+
+  @keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+
+
+.sugar{
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 500;
+  float: right;
+  margin: 5px;
+}
+
+.butter{
+  animation-delay: 10s;
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 550;
+  animation-direction: alternate;
+  float: right;
+  margin: 5px;
+
+}
+
+.eggs{
+  animation-delay: 10s;
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 600;
+  animation-direction: alternate;
+
+}
+
+
+.vanilla{
+  animation-delay: 10s;
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 650;
+  animation-direction: alternate;
+
+}
+
+.meltedchoc{
+  animation-delay: 10s;
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 700;
+  animation-direction: alternate;
+
+}
+
+.flour{
+  animation-delay: 10s;
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 750;
+  animation-direction: alternate;
+
+}
+
+.cocoa{
+  animation-delay: 10s;
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 800;
+  animation-direction: alternate;
+
+}
+
+.salt{
+  animation-delay: 10s;
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 850;
+  animation-direction: alternate;
+
+}
+
+.cc{
+  animation-delay: 10s;
+  animation: bounceIn 5s;
+  position: absolute;
+  bottom: 275;
+  left: 900;
+  animation-direction: alternate;
+
+}
