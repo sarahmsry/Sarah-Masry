@@ -1,0 +1,141 @@
+<!--Storyboard-->
+<!--header/menue at the top that has the links to other recipes and home page
+    have that incorporate transitions (dropdowns for variations of said food and dropdowns for ingredients)
+box to the left showing list of ingredients needed in list format
+text below in list format showing instructions
+box aligned right that involves animation of how the food is prepared
+
+
+extra: have a fixed box to the right that moves down as the user scrolls down the page
+the box will change displays once user has scrolled down to different areas of the page depending on step
+the change in displays/gifs will be a fade out transiiton
+have buttons that say "next step" and have that be the trigger to a fade out scene-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How to Make Tacos!</title>
+        <link rel="stylesheet" href="ess.css">
+    </head>
+    <body>
+        <!--Menu-->
+        
+        <!--<div class="menu" id="myMenu">
+            <a href="#Home">Home</a>
+            <a href="#taco">Taco Recipe</a>
+            <div class="dropdown">
+                    <button class="dropbtn">Tacos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="content">
+                        <a href="#btaco">Beef Taco</a>
+                        <a href="#ctaco">Chicken Taco</a>
+                        <a href="#vtaco">Veggie Taco</a>
+                        <a href="#Tingredients">Ingredients</a>
+                    </div>
+                
+            </div>
+            
+            <a href="#burger">Burger Recipe</a>
+           
+
+            <a href="#brownies">Brownies Recipe</a>
+            
+
+            <a href="#pizza">Pizza Recipe</a>
+            
+        </div>-->
+        
+    
+        
+
+        <br><br><br><br><br>
+
+
+        <div class="title">
+            <h1>TACO RECIPE</h1>
+        </div>
+        <div class="ingredients">
+            <h3 class="center">Ingredients Needed</h3>
+            <div class="column">
+                <ol class="center">
+                    <li>Mince meat</li>
+                    <li>Taco seasoning</li>
+                    <li>Hard/soft taco shell</li>
+                    <li>Mince meat</li>
+                    <li>Oil</li>
+                    <li>Salt</li>
+                    <li>Pepper</li>
+                    <li>Tomatoes</li>
+                    <li>Salsa</li>
+                    <li>Avacado/Guacamole</li>
+                    <li>Lettuce</li>
+                    <li>Cheese</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="left">
+            <div class="stepSec">
+                <h3 class="step">Step 1: </h3>
+                <p>Heat a pan on medium-high heat and add oil to the pan</p>
+                
+            </div>
+            <br><br>
+            <div class="stepSec">
+                <h3 class="step">Step 2: </h3>
+                <p>Add minced meat to the pan when hot</p>
+            </div>
+            <div class="stepSec">
+                <h3 class="step">Step 3: </h3>
+                <p>Cook meat until completely brown</p>
+            </div>
+        </div>
+        
+
+        <!--slideshow-->
+        <div class="slider">
+            <div class="images">
+                <input type="radio" name="slide" id="img1">
+                <input type="radio" name="slide" id="img2">
+                <input type="radio" name="slide" id="img3">
+                <input type="radio" name="slide" id="img4">
+                <input type="radio" name="slide" id="img5">
+                <input type="radio" name="slide" id="img6">
+
+
+                <img src="./test1.png" class="m1" alt="img1">
+                <img src="./test2.png" class="m2" alt="img2">
+                <img src="./test3.png" class="m3" alt="img3">
+                <img src="./test4.png" class="m4" alt="img4">
+                <img src="./test5.png" class="m4" alt="img5">
+                <img src="./test6.png" class="m4" alt="img6">
+            </div>
+            <div class="dots">
+                <label for="img1">1</label>
+                <label for="img2">2</label>
+                <label for="img3">3</label>
+                <label for="img4">4</label>
+                <label for="img5">5</label>
+                <label for="img6">6</label>
+
+            </div>
+        </div>
+        <div class="right">
+            <div class="stepSec">
+                <h3 class="step">Step 4: </h3>
+                <p>Add spices/seasonings and sauce to the mince meat and mix well</p>
+            </div>
+            <br><br>
+            <div class="stepSec">
+                <h3 class="step">Step 5: </h3>
+                <p>Cut up desired vegetables into mediume-small slices/cubes</p>
+            </div>
+            <div class="stepSec">
+                <h3 class="step">Step 6: </h3>
+                <p>Fill taco shells with minced meat and desired toppings</p>
+            </div>
+        </div>
+    </body>
+</html>
