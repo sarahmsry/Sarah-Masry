@@ -3,6 +3,11 @@ body {
 	background-color: rgb(260, 240, 230);
 }
 
+p {
+	margin-left : 10px;
+	margin-top : 10px;
+}
+
 h1 {
 	font-size : 30pt;
 	font-weight : bold;
@@ -21,17 +26,17 @@ h2 {
 	margin-right : 5%;
 	margin-left : 5%;
 	margin-bottom : 10px;
-	float : left;
 	border : 5px solid rgb(100, 70, 0);
 	background-color: rgb(220, 180, 80);
+	float : left;
 }
 
 .animationBlock {
+	position : relative;
 	width : 40%;
-	margin-left : 5%;
 	margin-right : 5%;
 	height : 500px;
-	float : right;
+	bottom : 40%;
 }
 
 .clear{
@@ -63,6 +68,13 @@ h2 {
 	
 	top: 40%;
 	left: 40%;
+}
+
+.ramenPos {
+	position: relative;
+	
+	top: 28%;
+	left: 30%;
 }
 
 .graterPos {
@@ -182,5 +194,15 @@ h2 {
 	animation-delay : 15s;
     -webkit-animation: fadeOut 10s;
 	-webkit-animation-delay : 15s;
+	animation-fill-mode: forwards;
+}
+
+.ramenbowlAnim {
+	position : absolute;
+	z-index : 10;
+	animation : fadeIn 10s;
+	animation-delay : 25s;
+	-webkit-animation: fadeIn 10s;
+	-webkit-animation-delay : 25s;
 	animation-fill-mode: forwards;
 }
