@@ -13,18 +13,19 @@
   }
   
   .slider{
-    top: 120px;
+    
     position: relative;
-    width: 15%;
+    top: 120px;
+    width: 300px;
     overflow: hidden;
   }
   .images{
     display: flex;
-    width: 100%;
+    width: inherit;
   }
   .images img{
     height:250px;
-    width: 100%;
+    width: inherit;
     transition: all 0.5s ease;
   }
   .images input{
@@ -53,19 +54,19 @@
     margin-left: 0;
   }
   #img2:checked~.m1 {
-    margin-left: -100%;
+    margin-left: -300px;
   }
   #img3:checked~.m1 {
-    margin-left: -200%;
+    margin-left: -600px;
   }
   #img4:checked~.m1 {
-    margin-left: -300%;
+    margin-left: -900px;
   }
   #img5:checked~.m1 {
-    margin-left: -400%;
+    margin-left: -1200px;
   }
   #img6:checked~.m1 {
-    margin-left: -500%;
+    margin-left: -1500px;
   }
 
 
